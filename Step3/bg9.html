@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <style type = "text/css">  
+		body{color:red} 
+		h1
+		{
+			color: orange; /* CSS에서의 주석 */
+			text-align:center;
+			font: "궁서"; /* CSS에서 글꼴 지정하는 방법은 2개, 한글은 큰 따옴표*/
+			font-family: "궁서",  /* 보통 body에 명시 arial; 궁서체가 없는 경우 arial로 대체 */
+		}	/* h1만 색깔 변경, 중앙정렬 */
+		h2
+		{
+			text-indent:200px
+		} /* 들여쓰기, 안되는 조건: 한줄만 가능*/
+		h3
+		{
+			text-transform::uppercase; /* 소문자를 대문자로 변경 (소문자는 lowetrcase) */
+			letter-spacing: 20px; /* 글자간 간격 */
+		}
+		h4
+		{
+			text-transform: capitalize; /* 첫 글자를  대문자로 저장*/ 
+			word-spacing: 20px; /* 단어와 단어 사이의 간격 */
+		}
+		p
+		{
+			font-size: 30px; /* 글자 크기 */
+            font-weight: 700; /* 글자 두께,  500이하는 라이트. 700은 볼드, 80는 엑스트라볼드*/
+			text-shadow: 3px 2px black; /* 글씨 그림자: 오른쪽 아래에 그림자, 익스플러어 8이상부터 가능 => 글씨를 그림위에 올릴 경우*/
+			line-height: 40px; /* 줄 간격 /
+		}
+  </style>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+	<h1> 글자로 웹을 그리다  </h1>
+	<h2> 글자로 웹을 그리다  </h2>
+	<h3> abcdefgh </h3>
+	<h4> red yellow green </h4>
+	<p> 글자로 웹을 그리다 <br/> 글자로 웹을 그리다 </p>
+ </body>
+</html>

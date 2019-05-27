@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+  <link href="default.css" rel="stylesheet" type="text/css"/>
+  <title>Brushed</title>
+	<style type="text/css">
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<!--HEADER-->
+			<header>
+				<h1><a href="#"><img src="images/logo.png"/></a></h1>
+				<nav> <!--MENU--> 
+					<a href="#">HOME</a>  
+					<a href="#">OUR WORK</a>
+					<a href="#">ABOUT US</a> 
+					<a href="#">CONTACT</a>  
+					<a href="#">SHORTCODES</a>
+				</nav>
+				<img class="m_menu" src="images/menu-mobile.png"/>
+			</header>
+		<!--//HEADER-->
+
+		<!--CONTENT-->
+			<div class="container">
+			    <!--Our Work-->
+					<section class="our_work">
+						<article>
+							<h2 class="head_tit">Our Work</h2>
+							<h3 class="sub_tit">Check Out Our Projects on <span>Dribbble</span></h3>
+							<aside>
+								<h4>TYPE OF WORK</h4>
+								<ul>
+									<li><a href="#" class="m_filter"><img src="images/filter-icon.png"/></a></li>
+									<li><a href="#">All Projects</a></li>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Photography</a></li>
+									<li><a href="#">Video</a></li>
+								</ul>
+							</aside>
+							
+
+					<!--GALLERY-->
+						<div class="gallery">
+							<ul>
+								<li><a href="#"><span>+</span></a><img src="images/image-01.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-02.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-03.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-04.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-05.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-06.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-07.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-08.jpg"/></li>
+								<li><a href="#"><span>+</span></a><img src="images/image-09.jpg"/></li>
+							</ul>
+						</div>
+					</article>
+				</section>
+
+				<!--ABOUT US-->
+					<section class="about_us">
+						<h2 class="head_tit">About Us</h2>
+						<h3 class="sub_tit">Learn About our Team &amp; Culture.</h3> <!--&middot-->
+						<ul>
+								<li class="photo"><img src="images/profile-01.jpg"/></li>
+								<li class="name">John Doe</li>
+								<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <span>hendrerit dictum.</span> Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+								<li class="sns"><a href="#"><img src="images/icon_01.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_02.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_03.gif"></a></li>
+						</ul>
+						<ul>
+								<li class="photo"><img src="images/profile-02.jpg"/></li>
+								<li class="name">Jane Helf</li>
+								<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <span>hendrerit dictum. </span>Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+								<li class="sns"><a href="#"><img src="images/icon_01.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_02.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_03.gif"></a></li>
+						</ul>
+						<ul>
+								<li class="photo"><img src="images/profile-03.jpg"/></li>
+								<li class="name">Joshua Insanus</li>
+								<li class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <span>hendrerit dictum.</span> Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+								<li class="sns"><a href="#"><img src="images/icon_01.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_02.gif"></a></li>
+								<li class="sns"><a href="#"><img src="images/icon_03.gif"></a></li>
+						</ul>
+					</section>
+				<!--//ABOUT US-->
+
+				<!--GET IN TOUCH-->
+					<section class="get_in_touch">
+						<article>
+							<h2 class="head_tit">Get in Touch</h2>
+							<h3 class="sub_tit">We’re currently accepting new client projects. We look forward to serving you.</h3>
+							<h3 class="resize">We’re currently accepting new client projects.<br/>We look forward to serving you.</h3>
+							<form method="post"> <!--method:폼을 보내는 것-->
+								<fieldset>
+									<ul>
+										<li><input type="text" placeholder="Full Name"/></li>
+										<li><input type="text" placeholder="Email"/></li>
+										<li><textarea placeholder="Message"></textarea></li>
+									</ul>
+									<button>Send Your Email</button>
+								</fieldset>
+							</form>
+							<hr/>
+							<aside>
+								<h4>CONTACT DETAILS</h4>
+								<ul>
+									<li><a href="mailto:hello@brushed.com">hello@brushed.com</a></li>
+									<li><a href="tel:(916) 375-2525">(916) 375-2525</a></li>
+									<li>Brushed Studio<br/>5240 Vanish Island. 105<br/>Unknow</li>
+								</ul>
+							</aside>
+						</article>
+					</section>
+				<!--//GET IN TOUCH-->
+
+				<!--SNS BUTTON-->
+					<section class="sns_btn">
+							<a href="#" target="_blank"> <!--target="_blank"는 새창열기-->
+								<img src="images/bottom_btn_01.gif" class="off"/>
+								<img src="images/bottom_btn_01_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_02.gif" class="off"/>
+								<img src="images/bottom_btn_02_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_03.gif" class="off"/>
+								<img src="images/bottom_btn_03_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_04.gif" class="off"/>
+								<img src="images/bottom_btn_04_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_05.gif" class="off"/>
+								<img src="images/bottom_btn_05_on.gif" class="on"/>
+							</a>
+
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_06.gif" class="off"/>
+								<img src="images/bottom_btn_06_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_07.gif" class="off"/>
+								<img src="images/bottom_btn_07_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_08.gif" class="off"/>
+								<img src="images/bottom_btn_08_on.gif" class="on"/>
+							</a>
+							<a href="#" target="_blank">
+								<img src="images/bottom_btn_09.gif" class="off"/>
+								<img src="images/bottom_btn_09_on.gif" class="on"/>
+							</a>
+					</section>
+			</div>
+		<!--//CONTENT-->
+
+		<!--FOOTER-->
+			<footer>©2013 BRUSHED. <span class="red">BRUSHED TEMPLATE </span>BY <span class="red">ALESSIO ATZENI</span></footer>
+		<!--//FOOTER-->
+	</div>
+ </body>
+</html>

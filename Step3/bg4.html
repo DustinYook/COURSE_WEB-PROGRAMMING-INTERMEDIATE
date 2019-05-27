@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <!-- <meta charset="UTF-8"> -->
+  <title>Document</title>
+  <style type = "text/css">
+
+	 /* 리셋코드 => 브라우저에 맞출때 사용*/
+	html, body{width:100%; height: 100%;display: block}
+	body,ul,li{text-align:center;margin: 0;padding: 0}
+	ul,ol,li{list-style:none}
+	*{box-sizing: border-box;-moz-box-sizing: border-box}
+	a{text-decoration:none}
+	a:hover{text-decoration:none}
+	a:active{text-decoration:none}
+	a:visited{text-decoration:none}
+
+	ul{
+		width:100%;
+		display:block;
+		text-align:left;
+	}
+	ul,li{
+		width: 200px;
+        float: left;
+		border:1px solid black;
+	} 
+	a{color:white;width:100%;height: 30px;float:left;line-height:30px}
+	a.link1{background:green}
+	a.link1:hover{background:white;color: black}
+
+	a{color:white;width:100%;height: 30px;float:left;line-height:30px}
+	a.link2{background:blue}
+	a.link2:hover{background:white;color: black}
+
+	a{color:white;width:100%;height: 30px;float:left;line-height:30px}
+	a.link3{background:orange}
+	a.link3:hover{background:white;color: black}
+
+	a{color:white;width:100%;height: 30px;float:left;line-height:30px}
+	a.link4{background:red}
+	a.link4:hover{background:white;color: black}
+
+  </style>
+ </head>
+ <body>
+	<ul>
+		<li><a href = "http://www.naver.com" class = "link1">Naver</a></li>
+		<li><a href = "http://www.google.com" class = "link2">Google</a></li>
+		<li><a href = "http://www.daum.net" class = "link3">Daum</a></li>
+		<li><a href = "http://www.nate.com" class = "link4">Nate</a></li>
+	</ul>
+ </body>
+</html>
+<!--display block에서 float쓰면 안됨-->
+<!--링크에서는 명시를 해주어야 함-->
+<!--높이 주는 방법: 패딩, 라인하이트, height-->

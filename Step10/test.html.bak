@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+  <link href="default1.css" rel="stylesheet" type="text/css"/>
+  <title>TEST</title>
+	<style type="text/css">
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+				<!--Say Hello-->
+					<section class="say_hello">
+						<form>
+							<fieldset>
+								<h2 class="f_st_ab">Say Hello.</h2>
+								<span>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. </span>
+								<ul>
+									<li class="w100">이메일</li>
+									<li class="w100"><input type="text" placeholder="Name"></li>
+									<li class="w100" style="text-align:right"><input type="text" placeholder="E-mail"></li>
+									<li class="w100"><textarea placeholder="Message"></textarea></li>
+									<li class="w100" style="text-align:center"><button>Send Message</button></li>
+								</ul>
+							</fieldset>
+						</form>
+					</section>
+
+			</div>
+		<!--//CONTENT-->
+
+		<!--FOOTER-->
+			<footer>© UntitledDesign: HTML5 UPDemo Images: Felicia Simion + Michael Domaradzki</footer>
+		<!--//FOOTER-->
+	</div>
+ </body>
+</html>

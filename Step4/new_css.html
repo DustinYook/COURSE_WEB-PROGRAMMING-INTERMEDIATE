@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Opacity</title>
+  <style type-"text/css">
+	img
+	{
+		opacity:0.5; /*안에 있는 모든 요소가 죽음*/
+		filter:alpha(opacity=50); /*IE8.0*/
+	}
+	.aa{width:500px;height:500px;background:orange}
+	.aa span{font-size:30px;color:black}
+  </style>
+ </head>
+ <body>
+	<img src="images/tracking.jpg"/>
+	<div class="aa">
+		<span> text text text text </span>
+	</div>
+ </body>
+</html>

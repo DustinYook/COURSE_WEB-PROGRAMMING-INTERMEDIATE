@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+  <title>Document</title>
+	<style type="text/css">
+		body{font-family: "Nanum Gothic",sans-serif;font-size:1em;line-height:0}  /*공백제거: margin-top:-4px*/
+		#wrap{width:100%;max-width:640px;height:100%;position:relative;display:block;margin:0 auto} /*position:relative - 팝업, 100%는 block*/
+		header{width:100%;display:inline-block;border-bottom:1px solid #477cab;padding:10px 2%;background:white} /*좌우는 %*/ 
+		/*display:inline-block, 한 속성 안에 float이 들어간 경우*/ /*block은 중앙정렬 못감, margin:0 auto써야 감*/
+		header h1{float:left} 
+		header > a{float:right}
+		.container{width:100%;display:block}
+		.container section{width:100%;display:inline-block} /*section안에 float요소 많으므로 inline-block*/
+		.main_banner img{width:100%}
+		.mid_menu ul{width:100%;display:inline-block;text-align:left}
+		.mid_menu ul li{width:50%;float:left;border-bottom:1px solid #e1e1e1;border-right:1px solid #e1e1e1}
+		.mid_menu ul li a{width:100%;background:#f2f2f2;color:#4c4243;display:block;line-height:3.6em;padding-left:4%}
+		.mid_menu ul li:nth-child(2n){border-right:none}
+		.tel a{width:100%;display:block;background:#477cab;color:white;font-size:2em;font-weight:bold;line-height:2em}
+		.tel a img{vertical-align:middle;margin-right:10px}
+		footer{width:100%;display:block;border-top:1px solid #fff;background:#477cab}
+		footer a{width:10%;display:inline-block}
+		footer a img{width:100%}
+		footer span{width:100%;display:block;color:white;font-size:0.8em;line-height:1.4em}
+		/*미디어쿼리*/
+		@media all and (max-width:639px) /*640px이하는 다 공통*/
+		{
+			body{background:#477cab}
+			header h1{width:30%} 
+			header h1 img{width:100%}
+			header > a{width:10%}
+			header > a img{width:100%}
+			.tel a{font-size:1.5em}
+			.tel a img{width:10%}
+		}
+		@media all and (min-width:320px) and (max-width:374px}
+		{
+			.tel a{font-size:1.4em;padding:10px 0}
+		}
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<header>
+			<h1><a href="/" title="메인으로 이동"><img src="images/mystats/top_logo.png" alt="마이스탯 로고"/></a></h1> <!--로고-->
+			<a href="#" title="메뉴 오픈버튼"><img src="images/mystats/all_menu_btn.png" alt=""/></a>
+		</header>
+		<div class="container"> <!--메인 컨텐츠 시작하면 container사용-->
+			<section class="main_banner"><img src="images/mystats/visual01.jpg" alt="메인 이미지"/></section>
+			<section class="mid_menu">
+				<ul>
+					<li><a href="#">Menu1</a></li>
+					<li><a href="#">Menu2</a></li>
+					<li><a href="#">Menu3</a></li>
+					<li><a href="#">Menu4</a></li>
+					<li><a href="#">Menu5</a></li>
+					<li><a href="#">Menu6</a></li>
+				</ul>
+			<section class="tel">
+				<a href="tel:010-0000-0000" title="010-0000-0000으로 통화">
+					<img src="images/mystats/icon_f_tel.png" alt=""/>010-0000-0000
+				</a> <!--모바일에서는 연동-->
+			</section>
+		</div>
+		<footer>
+				<a href="#"><img src="images/mystats/go_top_icon.png" alt="상단으로 이동"/></a>
+				<span>
+					마이스텟<br/>
+					COPYRIGHT(C) <a href="mailto:yookdonny3@naver.com">mystats.</a><br/>
+					ALL RIGHTS RESERVED.
+				</span>
+		</footer>
+	</div>
+ </body>
+</html>

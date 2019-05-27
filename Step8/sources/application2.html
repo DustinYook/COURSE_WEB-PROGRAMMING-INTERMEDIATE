@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><!-- 기준은 iphone 6+ --><HTML lang="ko" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META charset="utf-8">	 
+<META name="viewport" content="width=device-width,user-scalable=no">     
+<TITLE>Coupang</TITLE>	 <LINK href="application2_files/reset.css" rel="stylesheet"> 
+    
+<STYLE type="text/css">
+		body{font-family:"Nanum Gothic",sans-serif;font-size:14px}
+		#wrap{width:100%;height:100%;max-width:640px;position:relative;margin:0 auto} /*margin:0 auto <=> display:inline-block: 중앙정렬*/
+		/* Introduction */
+		.intro{width:100%;height:100%;position:fixed;bottom:0;left:0;background:#f7eecd url(images/logo_coupang.png) no-repeat center center;background-size:60%;z-index:99} /*position:fixed => 팝업, bgsize:해상도에 관계없이 중앙 60% 유지*/
+		/*전체가 이미지로 들어가야 하는 경우: background는 cover여야 함*/
+		.intro /* 포인트 */
+		{
+			animation-name:first_view;
+			animation-duration:1s; /*영상 총 재생시간*/
+			animation-delay:2s; /*2초 후에 애니메이션 재생*/
+			/*opacity의 단점: 실제적으로 레이어가 사라지는 것이 아니라 눈에만 안보이는 것 => 클릭이 불가능 함*/
+			animation-fill-mode:forwards; /*forwards:마지막 keyframe, backwards:첫 keyframe*/
+			/*애니메이션 재생 후 처음으로 다시 돌아가는 문제 발생*/
+		}
+		@keyframes first_view
+		{
+			from{opacity:1}
+			to{opacity:0;bottom:-100%} /*2초있다가 완전히 사라짐, 안보이는 것 뿐만아니라 완전히 아래로 푹 꺼짐*/
+		}
+		/* Contents */
+		section{width:100%;height:100%;position:fixed;left:0;bottom:0;background:rgba(0,0,0,0.6)} 
+		/*나중에 쓴 게 더 위에 올라가는 문제 => z-index를 통해 해결*/
+		section form{width:100%;position:absolute;left:0;top:17%;padding:0 2%}
+		section form fieldset{width:100%;border:1px solid white;display:inline-block;padding:20px 2%;border-radius:5px} 
+		/*border-radius:모서리 둥글게*/
+		section form dl, 
+		section form dt,
+		section form dd{width:100%;display:inline-block;text-align:left} /*여러개 클래스 나열의 경우에 이렇게 하기도 함*/
+		section form dt{font-size:1.6em;font-weight:700;color:white;margin:20px 0 5px 0}
+		section form dd input{width:100%;padding:10px 4%;font-size:1.4em;border:none}
+		section form dt:first-child{margin-top:0}
+		section form dd input.login_btn{height:50px;background:linear-gradient(#dc4c42,#521110);color:white;
+		font-family:'arial black';font-weight:700;font-size:1.6em}
+		section form dd:last-child{margin-top:30px}
+		section form dt:first-child{margin-top:0px}
+		.bottom_btn{width:100%;height:50px;position:fixed;bottom:0;left:0}
+		.bottom_btn a{width:50%;height:50px;float:left;color:white;font-size:1em;line-height:50px}
+		.bottom_btn a:first-child{background:#193356}
+		.bottom_btn a:last-child{background:#264b78}
+		/*미디어쿼리*/
+		@media all and (max-width:320px) /*iphone 5*/
+		{
+			section form{width:100%;position:absolute;left:0;top:10%;padding:0 2%}
+			section form dt{font-size:1.2em}
+			section form dd input{padding:10px 2%;font-size:1em}
+			section form dd input.login_btn{font-size:1.2em}
+		}
+		@media all and (min-width:321px) and (max-width:360px) /*갤럭시 S5*/
+		{
+			section form{width:100%;position:absolute;left:0;top:15%;padding:0 2%}
+			section form dt{font-size:1.2em}
+			section form dd input{padding:10px 2%;font-size:1em}
+			section form dd input.login_btn{font-size:1.2em}
+		}
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY>
+<DIV id="wrap">
+<DIV class="intro"></DIV></DIV><SECTION>
+<FORM>
+<FIELDSET>
+<DL><!--묻고 답하는 양식에서는 dl 사용-->					 
+  <DT>이메일</DT>
+  <DD><INPUT type="text" placeholder="아이디 입력" value=""></DD>
+  <DT>전화번호</DT>
+  <DD><INPUT type="text" placeholder="전화번호 입력" value=""></DD>
+  <DT>패스워드</DT>
+  <DD><INPUT type="password" placeholder="패스워드 입력" value=""></DD>
+  <DD><INPUT class="login_btn" type="button" value="LOGIN"></DD></DL></FIELDSET></FORM>
+<DIV class="bottom_btn"><A href="file:///C:/Users/Dustin%20Yook/Desktop/WebBasic/Step8/application.html.bak#">회원가입</A>
+			 <A href="file:///C:/Users/Dustin%20Yook/Desktop/WebBasic/Step8/application.html.bak#">아이디/패스워드 
+찾기</A>		 </DIV></SECTION></BODY></HTML>

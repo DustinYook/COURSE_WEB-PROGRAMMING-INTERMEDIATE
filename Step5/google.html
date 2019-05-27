@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <link href="../reset.css" rel="stylesheet"/>
+  <style type="text/css">
+	body{font-family:Arial;font-size:13px}
+	/*header*/
+	.header{width:100%;padding:10px;display:inline-block}
+	.header ul{float:right}
+	.header ul li{display:inline-block;margin:10px;vertical-align:middle;line-height:30px} /*가장 높이 높은 얘 기준으로 높이 설정*/
+	.header ul li a{color:gray;vertical-align:middle}
+	.header ul li a:hover{text-decoration:underline}
+	.header ul li img{opacity:0.5;cursor:pointer;vertical-align:middle} /*이미지 하나로 여러효과*/
+	.header ul li img:hover{opacity:1}
+	.header ul li button{background:#4584ee;color:white;font-weight:bold;border:none;padding:0 15px;height:30px}
+	/*search_area*/
+	.search_area{width:590px;position:absolute;left:50%;margin-left:-295px;top:30%} /*정중앙 배치*/
+	.search_area .logo{width:100%;display:inline-block}
+	.search_area .logo h1{width:270px;height:91px;position:relative;display:inline-block} /*relative:부모로 설정, 없으면 position있는 얘를 부모로 인식*/
+	.search_area .logo h1 span{position:absolute;right:0;bottom:0;font-size:16px;color:#4584ee;font-weight:normal} /*absolute:이미지 위에 글씨 띄움*/
+	.search_area .field{width:100%;border:1px solid gray;padding:10px;margin:10px;display:inline-block;position:relative} /*float포함해서display필요*/
+	.search_area .field input[type=text]{width:80%;border:none;font-size:16px;float:left}
+	.search_area .field .keyboard{width:19px;height:11px;text-indent:-99999px;overflow:hidden;border:none;background:url(images/g_icon2.png);
+	position:absolute;right:10%;top:50%;margin-top:-5px}
+	.search_area .field .voice{width:14px;height:20px;text-indent:-99999px;overflow:hidden;border:none;background:url(images/g_icon3.png);
+	position:absolute;right:5%;top:50%;margin-top:-10px} /*absolute는 크기가 있어야 가능*/
+	/*footer*/
+	.footer{width:100%;background:#dfdfdf;padding:10px 20px;position:fixed;bottom:0;left:0}
+	.footer li{display:inline-block;margin:0 15px} /*한줄배치*/
+	.footer li a{color:black}
+	.footer li a:hover{text-decoration:underline}
+	.footer .first{float:left}
+	.footer .second{float:right}
+  </style>
+ </head>
+ <body>
+	<!--header-->
+	<div class="header">
+		<ul>
+			<li><a href="#">Gmail</a></li>
+			<li><a href="#">이미지</a></li>
+			<li><a href="#"><img src="images/g_icon1.png"/></a></li>
+			<li><button>로그인</button></li>
+		</ul>
+	</div>
+	<!--search_area-->
+	<div class="search_area">
+		<div class="logo"> <!--이미지가 꽉차지 않음-->
+			<h1>
+				<img src="images/g_logo.gif"/>
+				<span>한국</span>
+			</h1>
+		</div>
+			<div class="field">
+			<input type="text"/>
+				<button class="keyboard">가상키보드</button>
+				<button class="voice">보이스검색</button>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<ul class="first">
+			<li><a href="#">광고<a></li>
+			<li><a href="#">비즈니스<a></li>
+			<li><a href="#">Google정보<a></li>
+		</ul>
+		<ul class="second">
+			<li><a href="#">개인정보처리방침<a></li>
+			<li><a href="scroll.html">약관<a></li>
+			<li><a href="#">설정<a></li>
+		</ul>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,110 @@
+body{font-family:Arial;color:#39454b;font-size:14px} 
+	#wrap{width:100%;height:100%;position:relative;display:block}
+
+	/*common*/
+		.f_st_ab{font-family:'arial black'} /*font-style이 arial black*/
+	
+	/*header*/
+		header{width:100%;display:inline-block;padding:20px} /*display는 float을 이용하기 위함*/
+		header h1{float:left}
+		header h1 a{font-size:24px;color:#39454b} /*서체에 대해서 적용할 때 h1에 써야 함*/
+		header nav{float:right;margin-top:10px}
+		header nav a{display:inline-block;font-size:16px;color:#39454b;margin-left:20px} /*일렬로 배열은 inline-block, inline은 width를 설정해주어야 함*/
+		header nav a:hover{text-decoration:underline}
+		header a.m_menu{display:none}
+
+	/*container*/
+		/*container*/
+			.container{width:100%;display:block;position:relative}
+			.container section{width:100%;display:block}
+
+		/*intro*/
+			.intro{height:700px;background:url(images/intro.jpg) no-repeat center center;background-size:cover;position:relative} /*background-size:cover:꽉 차게*/
+			.intro article{width:1020px;display:inline-block;margin:0 auto} /*display:inline-block과 margin:0 auto는 중앙정렬, float은 margin불가*/
+			.intro article h2{font-size:70px;color:#fff;margin-top:250px}
+			.intro article span{font-size:18px;color:#fff}
+			.intro article span.m_text{display:none}
+			.intro div.w_bg{width:100%;height:700px;background:rgba(255,255,255,0.2);position:absolute;left:0;top:0}
+
+		/*what i do #1*/
+			.what_i_do1{height:700px;background:url(images/one.jpg) no-repeat center center fixed;background-size:cover;position:relative}
+			.what_i_do1 article{width:40%;background:#fff;padding:100px 30px;text-align:left;position:absolute;right:0;top:200px} 
+			.what_i_do1 article h2{font-size:40px;color:#39454b}
+			.what_i_do1 article span{font-size:18px;color:#39454b}
+
+		/*what i do #2*/
+			.what_i_do2{height:700px;background:url(images/two.jpg) no-repeat center center fixed;background-size:cover;position:relative}
+			.what_i_do2 article{width:40%;background:#fff;padding:100px 30px;text-align:left;position:absolute;left:0;top:200px} 
+			.what_i_do2 article h2{font-size:40px;color:#39454b}
+			.what_i_do2 article span{font-size:18px;color:#39454b}
+
+		/*my work*/
+			.my_work{width:100%;display:block;padding:100px}
+			.my_work article{width:1020px;display:inline-block}
+			.my_work article h2{font-size:40px;color:#39454b;margin-bottom:20px}
+			.my_work article span{width:100%;font-size:22px;color:#39454b;line-height:1.2em}
+			.my_work ul{width:100%;display:inline-block;margin-top:40px}
+			.my_work ul li{width:50%;float:left;line-height:0} /*리스트 붙이려면 line-height:0*/
+			.my_work ul li img{width:100%;max-width:510px}
+
+		/*say hello*/
+			.say_hello{width:100%;display:block;padding:70px 0 50px 0;background:#f5f6f7}
+			.say_hello form{width:1020px;display:inline-block}
+			.say_hello form fieldset{width:100%;display:block}
+			.say_hello form fieldset h2{font-size:40px;color:#39454b;margin-bottom:20px}
+			.say_hello form fieldset span{width:100%;font-size:22px;color:#39454b;line-height:1.2em}
+			.say_hello ul{width:100%;display:inline-block;text-align:left;background:#fff;padding:30px 4%}
+			.say_hello ul li{float:left}
+			.say_hello ul li.w50{width:50%}
+			.say_hello ul li.w100{width:100%;margin-top:15px}
+			.say_hello ul li input[type=text]{width:98%;border:2px solid #e5e6e7;border-radius:5px;font-size:16px;padding:15px 2%;margin-top:20px}
+			.say_hello ul li textarea{width:100%;height:250px;border:2px solid #e5e6e7;border-radius:5px;font-size:16px;padding:15px 1%;font-family:'arial';resize:none} 
+			/*resize:none: chrome에서 텍스트상자 조절방지*/
+			.say_hello ul li button{background:#98c593;font-size:18px;border-radius:30px;color:#fff;border:none;padding:15px 80px}
+			/*margin:0 auto가 먹히지 않음*/
+
+	/*footer*/
+			footer{width:100%;background:#39454b;font-size:12px;color:#797f83;padding:40px 10%}
+
+/*media query for ipad vertical*/
+	@media all and (max-width:768px)
+	{
+		.intro article{width:100%}
+		.intro article span.m_text{display:block}
+		.intro article span.pc_text{display:none}
+		.my_work article{width:100%}
+		.say_hello form{width:100%;padding:0 2%}
+	}
+
+/*media query for ipad vertical*/
+	@media all and (min-width:360px) and (max-width:735px)
+	{
+		header h1{float:inherit;display:inline-block} 
+		header nav{display:none}
+		header a.m_menu{display:block;position:absolute;right:2%;top:36px}
+		.intro{height:450px}
+		.intro article h2{font-size:4em;margin-top:140px}
+		.intro article span{font-size:1.2em}
+		.intro div.w_bg{height:450px}
+		.what_i_do1{height:450px}
+		.what_i_do1 article{width:100%;top:inherit;bottom:0;padding:10px 5%} /*top의 수치무효화 후 아래 붙임*/
+		.what_i_do1 article h2{font-size:2em}
+		.what_i_do1 article span{font-size:1.2em}
+		.what_i_do2{height:450px}
+		.what_i_do2 article{width:100%;top:inherit;bottom:0;padding:10px 5%} /*top의 수치무효화 후 아래 붙임*/
+		.what_i_do2 article h2{font-size:2em}
+		.what_i_do2 article span{font-size:1.2em}
+		.my_work{width:100%;display:block;padding:50px 10px;border-top:3px solid #eee}
+		.my_work article h2{font-size:2em}
+		.my_work article span{font-size:1.2em}
+		.my_work ul{width:100%}
+		.say_hello{padding:30px 0 30px 0}
+		.say_hello form{width:100%}
+		.say_hello form fieldset h2{font-size:2em}
+		.say_hello form fieldset span{font-size:1.2em}
+		.say_hello ul{width:100%;padding:10px 4%;margin-top:20px}
+		.say_hello ul li.w50{width:100%}
+		.say_hello ul li.w100{width:100%}
+		.say_hello ul li input[type=text]{width:100%}
+		.say_hello ul li textarea{height:200px}
+	}

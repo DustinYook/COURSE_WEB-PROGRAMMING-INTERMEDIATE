@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>회원가입양식</title>
+ </head>
+ <body>
+	<form> 
+		<fieldset> <!--네모상자를 표시하게 하는 테그--> 
+		<!--무엇 때문에 입력받는지 명시-->
+		<legend>테스트</legend> <!--개발자와 소통위해 사용-->
+		
+		<input type = "text" maxlength = "12" placeholder = "아이디"/> <!--self-closing tag-, 띄어쓰기하면 옵션줄 수 있음-->
+		<!--한글은 운영체계에 따라 바이트수가 다르기 때문에 한글과 영어의 글자입력수가 차이날 수도 있음에 유의한다.-->
+		<input type = "password" maxlength = "6"/> <!--점으로 표시--> <!--maxlength: 사용자가 직접입력하는 곳에 적용-->
+		<input type = "checkbox"/> <!--체크박스: 선택해제가능--> 
+		<input type = "checkbox"/>
+
+		<input type = "radio" name = "aa" checked ="checked"/> <!--그룹화를 해주어야 함--> <!--checked를 써주면 디폴트 체크가 가능-->
+		<input type = "radio" name = "aa"/>
+		<input type = "radio" name = "aa"/>
+
+		<input type = "button" value = "제출"/> <!--self-closing이라 value를 통해 내용기입-->
+		<button>완료</button> <!--value는 안사라짐-->
+
+		<textarea readonly = "readonly">안양방송인터넷가입[약관내용의설명]참고바랍니다. 안양방송의 인터넷설치후 고객님이 약관의 주요내용을 많이 인지 하지 못하는데요?가입후계약서를 보시면... </textarea> <!--여러줄 기술식-->
+		<select>
+			<option>선택</option> <!--선택지 표시-->
+			<option>남자</option>
+			<option>여자</option>
+		</select>
+
+		<input type = "file"/>
+
+		</fieldset> <!-- 디자인을 위해 존재-->
+	</form>
+ </body>
+</html>

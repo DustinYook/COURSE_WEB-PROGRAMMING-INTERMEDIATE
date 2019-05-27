@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+
+<!--Head-->
+<head>
+  <meta charset="UTF-8">
+  <title>Ray White</title>
+  <link href="C:\Users\Dustin Yook\Desktop\WebBasic\reset.css" rel="stylesheet" type="text/css"/>
+  
+  <!--style-->
+  <style type="text/css">
+	html,body{font-family:arial;background:#232323}
+	#wrap{width:100%;height:100%;display:block;position:relative} /*Wrap에 대한 일반공식*/
+	/*header*/
+	.header{width:100%;display:inline-block;position:relative;background:url(site/header_bg.gif) repeat-x}
+	.header h1{width:890px;display:inline-block;text-align:left;margin:15px 0}
+	.header .gnb{width:100%;height:29px;background:url(site/menu_bg.gif) repeat-x}
+	.header .gnb ul{width:890px;display:inline-block}
+	.header .gnb ul li{width:178px;float:left}
+	.lnk{color:white;line-height:30px;width:178px;height:100%;display:inline-block}
+	.lnk:hover{background:#fffc01;color:black;width:178px;height:100%;display:inline-block;font-weight:}
+	/*content*/
+	.content{width:890px;display:inline-block}
+	.main_img{width:100%;display:inline-block;position:relative}
+	.main_img form{width:260px;position:absolute;right:20px;top:20px}
+	.main_img form legend{width:100%;display:block;color:#fffc01;font-size:24px;font-weight:bold;border-bottom:1px solid #fffc01;text-align:left}
+
+	.main_img form dl{width:100%;display:inline-block;text-align:left}
+	.main_img form dl dt{width:130px;height:22px;color:white;float:left;margin:10px 0}
+	.main_img form dl dd{width:130px;height:22px;float:right;margin:10px 0}
+	.main_img form dl dd input{width:130px;height:22px;float:left}
+	.main_img form dl dd select{width:130px;height:22px;float:left}
+	.main_img form button{width:100%;height:40px;background:#fffc01;border:none;cursor:pointer}
+	/*gallery*/
+	.gallery{width:100%;display:inline-block;position:relative}
+	.gallery ul{width:100%;display:inline-block}
+	.gallery ul li{width:282px;padding:5px;border:1px solid #fffc01;display:inline-block}
+	.gallery ul li.first{float:left}
+	.gallery ul li.last{float:right}
+	.gallery ul li span{width:100%;height:26px;line-height:26px;background:#fffc01;color:black;display:inline-block}
+	.gallery ul li:hover span{background:#fff}
+  </style>
+  <!--//style-->
+
+</head>
+<!--//Head-->
+
+<!--Body-->
+<body>
+	<div id="wrap">
+	<!--Header-->
+	<div class="header">
+		<!--logo-->
+		<h1><a href="/" title="메인으로 이동"><img src="site/logo.gif" alt="로고"/></a></h1>
+		<!--//logo-->
+		<!--GNB-->
+		<div class="gnb">
+		<ul>
+			<li><a href="#" class="lnk">HOME</a></li>
+			<li><a href="#" class="lnk">BUYING</a></li>
+			<li><a href="#" class="lnk">SELLING</a></li>
+			<li><a href="#" class="lnk">RENTING</a></li>
+			<li><a href="#" class="lnk">CONTACT US</a></li>
+		</ul>
+		</div>
+		<!--//GNB-->
+	</div>
+	<!--//Header-->	
+	
+	<!--Content-->
+	<div class="content"> 
+		<!--Main IMG-->
+		<div class="main_img">
+			<img src="site/main_img.jpg">
+			<form>
+				<fieldset>
+					<legend>CONTACT US NOW</legend> <!--타이틀-->
+					<dl>
+						<dt>Name</dt>
+						<dd><input type="text"/></dd>
+
+						<dt>Phone</dt>
+						<dd><input type="text"/></dd>
+
+						<dt>Area</dt>
+						<dd>
+							<select>
+								<option>Select</option>
+							</select> 
+						</dd>
+						<dt>E-mail</dt>
+						<dd><input type="text"/></dd>
+					</dl>
+						<button>Contact Us Now</button>
+				</fieldset>
+			</form>
+		</div>
+		<!--//Main IMG-->
+		<!--Gallery-->
+		<div class="gallery">
+			<ul>
+				<li class="first"><img src="site/photo1.jpg"/><span>Photo1</span></li>
+				<li><img src="site/photo2.jpg"/><span>Photo2</span></li>
+				<li class="last"><img src="site/photo3.jpg"/><span>Photo3</span></li>
+			</ul>
+		</div>
+		<!--//Gallery-->
+	</div>
+	<!--//Contents-->
+	</div>
+</body>
+<!--//Body-->
+
+</html>

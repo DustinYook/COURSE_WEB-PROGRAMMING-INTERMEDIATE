@@ -1,0 +1,28 @@
+<html> 
+    <head> 
+          <title> 세상의 모든 지식 네이버 </title>
+    </head>
+    <body>
+          <center>
+               <img src="images/potal.jpg" alt = " " usemap = "aa"/>
+               <map name = "aa"> <!--연결할 수 있는 객체생성-->
+                   <area shape = "rect" href = "http://google.co.kr" coords = "9,6,294,114"/> <!--coords:좌표, 시작점과 끝 좌표(x,y), 모바일에서 사용불가-->
+               </map>
+
+               <img src="images/circle_link.jpg" alt = " " usemap = "ab"/>
+               <map name = "ab"> <!--연결할 수 있는 객체생성-->
+                   <area shape = "circle" href = "http://google.co.kr" coords = "302,297,144/> <!--coords:좌표, 시작점과 끝 좌표(x,y), 모바일에서 사용불가-->
+               </map> 
+                     
+               <img src="images/seoul.jpg" alt = " " usemap = "ac"/> <!-- href = "#": 이동할 필요가 없는 경우 링크표시를 #으로 해놓음-->
+               <map name = "ac"> <!--연결할 수 있는 객체생성-->
+                   <area shape = "poly" href = "http://google.co.kr" coords = "225,377,238,410,412,524,454,461,445,440,393,441,283,343" onfocus = "this.blur();"/> <!--coords:좌표, 시작점과 끝 좌표(x,y), 모바일에서 사용불가-->
+               </map> 
+          <!--onfucus = "this.blur()": 자바 스크립트언어--> 
+          <!-- 다각형의 경우 poly를 사용하며 각 굴곡점의 x,y좌표를 기술 -->
+          <!-- 중심 x,y좌표, 반지름-->
+          <!-- 반드시 이미지끼리 모아놓을 필요는 없음-->
+             
+          </center> 
+    </body> 
+</html>

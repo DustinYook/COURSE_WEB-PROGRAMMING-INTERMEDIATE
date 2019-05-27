@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+	<h3><b>회원가입<b></h3>
+	<hr/>
+		<form> 
+		<fieldset> <!--네모상자를 표시하게 하는 테그--> 
+		<!--무엇 때문에 입력받는지 명시-->
+		<legend>회원정보 입력</legend> <!--개발자와 소통위해 사용-->
+		<table>
+			<tr><td>이름</td><td><input type = "text" maxlength = "12" placeholder = ""/></td></tr>
+			<tr><td>아이디</td><td><input type = "text" maxlength = "12" placeholder = ""/></td></tr>
+			<tr><td>비밀번호</td><td><input type = "password" maxlength = "12" placeholder = ""/></td></tr>
+			<tr><td>비밀번호확인</td><td><input type = "password" maxlength = "12" placeholder = ""/></td></tr>
+			<tr>
+				<td>휴대폰번호</td>
+				<td>
+					<select><option>선택</option><option>010</option><option>011</option></select>
+					- <input type = "password" maxlength = "4" placeholder = ""/>
+					- <input type = "password" maxlength = "12" placeholder = ""/>
+				</td>
+			</tr>
+			<tr><td>지역</td><td><select><option>선택</option><option>서울</option><option>경기도</option></select></td></tr>
+			<tr>
+				<td>성별</td>
+				<td><input type="radio" name="aa" checked="checked"/>남</br><input type="radio" name="aa"/>여</td></br></td>
+			</tr>
+			<tr>
+				<td>취미</td>
+				<td><input type = "checkbox"/>낚시<input type = "checkbox"/>등산<input type = "checkbox"/>독서<input type = "checkbox"/>운동</td>
+			</tr>
+			<tr><td>자기소개</td><td><textarea></textarea></td></tr>
+			<tr><td>첨부파일</td><td><input type = "file"/></td></tr>
+			<tr><td colspan="2" align = "right"><button>회원가입 완료</button></td></tr>
+		</table>
+		</fieldset> <!--디자인을 위해 존재-->
+	</form>
+ </body>
+</html>

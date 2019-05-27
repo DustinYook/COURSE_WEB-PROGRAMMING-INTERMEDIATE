@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <title>Position2</title>
+	<style type = "text/css">
+        div{width:300px;height:300px}
+		.b{background:blue; position:fixed;l right:1%; top:30%}  /*absolute: 화면앞으로 붕 띄움 -> 팝업창 만드는 방법*/
+		.scroll{height:3000px}
+		.c{width:500px; height:500px; background:yellow; float:right; position:relative; top:500px}  /*부모임을 알려줌: relative*/
+		.a{background:red; position:absolute;  left:50%; top:50%; margin-left:-250px; margin-top:-250px; z-index:1} /* z-index의 값이 더 높은 것이 앞쪽에 존재 */
+		.cc{width:500px; height:500px; background:yellow; /* float:right; */ position:absolute; left:50%; top:50%; margin-left:-250px; margin-top:-250px} 
+	</style>
+ </head>
+ <body>
+    <div class = "b"> </div>
+    	<div class = "scroll"> </div>
+	<div class = "cc"><div class = "a"></div> 
+	</div>
+ </body>
+</html>

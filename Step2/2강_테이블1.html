@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>웹프로그래밍</title> 
+	</head>
+ <body> 
+	<table width="700px" border="1" align="center" cellpadding="20px" cellspacing="20px"> <!--table:표 생성-->
+			<tr> <!-- cellpadding:내부공간생성 cellspacing:외부공간생성 -->
+				<td align="center" height="50px" valign="top" bgcolor="yellow">셀1</td> <!--valign:수직정렬(vertical align) align:수평정렬-->
+				<td align = "center" valign = "middle" bgcolor = "blue">셀2</td> <!--valign의 옵션:top/middle/bottom-->
+				<td align = "center" valign = "bottom" bgcolor = "green">셀3</td> <!--bgcolor(background color)-->
+		    </tr><!--tr:행 생성(수평) td:열 생성(수직)-->
+			<tr> 
+				<td colspan="3" height="50px" valign="middle" bgcolor="red">셀4</td> 
+		    </tr>
+			<tr> <!--colspan:수평으로 합칠 칸의 수-->
+				<td height="50px" valign="middle" bgcolor="purple">셀5</td> 
+				<td colspan = "2" height="50px" valign="middle" bgcolor="orange">셀6</td> 
+		    </tr>
+	</table>
+ </body>
+</html>
+<!--패딩, 스페이싱, 보더가 들어가면 실제 생각한 크기보다 넓어지는 점에 주의한다-->
+<!--padding: 안에 공간을 만들어내는 것, margin/spacing: 밖에 공간을 만들어 내는 것-->

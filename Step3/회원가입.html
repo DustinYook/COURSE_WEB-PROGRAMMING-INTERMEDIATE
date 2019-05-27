@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<link href = "reset.css";type = "text/css"; rel="stylesheet">
+	<style>
+		.a{background:black;color:white;text-align:center; padding: 10px}
+		form{width:900px; margin:0 auto}  /*display:inline-block: 사이즈 있을 때 중앙정렬*/
+		table{width:100%;}
+		table tr{border:1px solid gray}
+		table th{width: 200px; border: 1px solid gray; padding:10px 0; text-align:left; text-indent:10px; background:#dcdcdc}
+		table tr.b{border:none}
+		table td{width:700px; text-align: left; padding:10px}
+		table tr.b td{text-align: center}
+		input{type="text"}, input{type="password"}{width:200px; height:30px} /*input의 타입이 "text"인 것만 적용*/
+		.ph1, .ph2{width: 100px; text-align:center}
+		.reg{width:100px}
+		.y{background:#dcdcdc}
+		input{type="checkbox"},input{type="radio"}{transform: scale(1.5); -webkit-transform:scale(1.5)} /* 체크박스 크기 바꿔주는 것 '1'이 디폴트값: 사파리에서는 미지원  => 클래스로 하는 것이 더 일반적임*/
+		textarea{width:100%; height:70px; border:1px solid gray; resize:none}  /* textarea에서 resize:none은 필수! */
+		.btn{color:white; background:black; border:5px solid black; padding:0; margin:0; cursor:pointer; width:150px}
+	</style> 
+</head>
+<body>
+    <h3 class = "a">회원가입</h3><br/>
+    <form>
+        <fieldset>
+            <legend>회원정보 입력</legend>
+            <table>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" placeholder="이름"/></td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td class = "y"><input type="text" placeholder="아이디" /></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" placeholder="비밀번호"/></td>
+                </tr>
+                <tr>
+                    <th>비밀번호확인</th>
+                    <td class = "y"><input type="password" placeholder="비밀번호 확인"/></td>
+                </tr>
+                <tr>
+                    <th>휴대폰번호</th>
+                    <td>
+                        <select>
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select>
+                        <label>-</label>
+                        <input type="text" maxlength="4" class="ph1"/>
+                        <label>-</label>
+                        <input type="text" maxlength="4" class ="ph2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>지역</th>
+                    <td class = "y">
+                        <select class = "reg">
+                            <option>선택</option>
+                            <option>서울</option>
+                            <option>경기도</option>
+                            <option>충청도</option>
+                            <option>강원도</option>
+                            <option>전라도</option>
+                            <option>경상도</option>
+                            <option>제주도</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td><input type="radio" name="man-woman" checked="checked" /><label>남</label><input type="radio" name="man-woma" /><label>여</label></td>
+                </tr>
+                <tr>
+                    <th>취미</th>
+                    <td class = "y"><input type="checkbox" /><label>낚시</label><input type="checkbox" /><label>등산</label><input type="checkbox" /><label>독서</label><input type="checkbox" /><label>운동</label></td>
+                </tr> <!-- 폼 안에 글씨를 넣는 경우 <label>을 써야 함 => reset에 추가; margin -->
+                <tr>
+                    <th>자기소개</th>
+                    <td><textarea placeholder="자기소개서를 입력하세요.&#13;&#10;(200자 이상)"></textarea></td> <!--&#13, &#10은 줄바꿈-->
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td class = "y"><input type="file"/></td>
+                </tr>
+                <tr class = "b">
+                    <td colspan="2"><button class="btn">회원가입 완료</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

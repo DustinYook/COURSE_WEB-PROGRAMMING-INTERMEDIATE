@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html> <!-- 기준은 iphone 6+ -->
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <title>김프로</title>
+	<link href="../reset.css" rel="stylesheet"/>
+    <style type="text/css">
+		body{font-family:"Nanum Gothic",sans-serif;font-size:14px}
+		#wrap{width:100%;height:100%;max-width:414px;position:relative;display:inline-block} /*margin:0 auto <=> display:inline-block: 중앙정렬*/
+		/*Introduction Page*/
+		.intro{width:100%;height:100%;position:fixed;bottom:0;left:0;background:url(images/kimpro.jpg) no-repeat center center;background-size:cover;z-index:99} /*전체가 이미지로 들어가야 하는 경우: background는 cover여야 함*/
+		.intro /* 포인트 */
+		{
+			animation-name:front_cover;
+			animation-duration:1.5s; /*영상 총 재생시간: 1.5초*/
+			animation-delay:1s; /*1초 후에 애니메이션 재생*/
+			animation-fill-mode:forwards; 
+		}
+		@keyframes front_cover
+		{
+			from{opacity:1}
+			to{opacity:0;left:-100%}
+		}
+		/* Main Page */
+		section{width:100%;height:100%;background:white;position:fixed;left:0;top:12%} 
+		section form{width:100%;position:absolute;left:0;top:27%;padding:0 2%}
+		section form fieldset{width:100%;border:none;display:inline-block} 
+		section form dl,section form dd{width:100%;display:inline-block;text-align:left}
+		section form dd input{width:100%;font-size:1.25em;font-weight:500;border:none}
+		.line{line-height:50px;color:#939393;font-weight:700;font-size:1.2em;margin:10px 0;text-indent:4%}
+		section form dd input.btn{height:50px;color:white;font-weight:700;font-size:1.6em;margin:10px 0;border-radius:5px}
+		.btn1{background:#49484e}
+		.btn2{background:#76bf3a}
+		.btn3{background:#909090}
+		.line{border-bottom:1px solid #939393}
+		.tab{width:100%;height:50px;position:fixed;top:30%;left:0}
+		.tab a{width:50%;height:50px;float:left;line-height:50px;background:#f3f3f3;color:#939393;border:1px solid #939393;font-size:1.4em;font-weight:800}
+		.tab a:nth-child(1){border-right:none}
+		.tab a:hover{background:white;color:#363636;border-bottom:#363636;border-top:5px solid #939393;font-weight:900}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+		<!-- Introduction -->
+		<div class="intro"></div>
+		<!-- Main Page -->
+		<section>
+			<div class="logo">
+				<h1><img src="images/kimpro_logo.gif"/></h1>
+			</div>
+			<div class="tab"> <!--tab-->
+				<a href="#">점주</a>
+				<a href="#">직원</a>
+			</div>
+			<form> <!--form-->
+				<fieldset>
+					<dl> <!--list 작성이 더 바람직-->
+						<dd class="line"><input type="text" placeholder="아이디를 입력하세요"/></dd>
+						<dd class="line"><input type="password" placeholder="비밀번호를 입력하세요"/></dd>
+						<dd><input type="button" value="로그인" class="btn btn1"/></dd>
+						<dd><input type="button" value="회원가입" class="btn btn2"/></dd>
+						<dd><input type="button" value="아이디/비밀번호 찾기" class="btn btn3"/></dd>
+					</dl> 			
+				</fieldset>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

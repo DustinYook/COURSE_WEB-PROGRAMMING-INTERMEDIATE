@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+	<link href="C:\Users\Dustin Yook\Desktop\WebBasic\reset.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css">
+	.abc{width:416px;height:247px;background:url("images/tracking.jpg");position:relative}
+	.abc div{width:100px;height:100px;background:#FBEA00;position:absolute;left:50%;top:50%;margin-left:-50px;margin-top:-50px}
+	div.abc a.link1{width:300px;height:30px;background:#FBEA00;color:black;position:absolute;left:58px;top:50%;margin-top:-15px;line-height:30px}
+	div.abc a.link2{width:200px;height:30px;background:black;color:white;position:absolute;left:216px;top:94%;margin-top:-15px;line-height:30px}
+	div.abc:hover a.link1{display:none}
+	div.abc:hover a.link2{background:pink;color:black;z-index:10}
+	div.text{width:600px;height:300px;background:url(images/white_bg.png);text-align:justify;left:0;top:0;padding:10px;z-index:9;display:none}
+	div.abc:hover div.text{display:block} /*마우스 올렸을 때만 나옴*/
+	</style>
+  <title>Tracking</title>
+ </head>
+ <body>
+	<div class="abc">
+		<a href="#" class="link1"><span>마우스를 올려보세요</span></a>
+		<a href="#" class="link2"><span>Tracking</span></a>
+		<div class="text">글씨</div>
+	</div>
+ </body>
+</html>

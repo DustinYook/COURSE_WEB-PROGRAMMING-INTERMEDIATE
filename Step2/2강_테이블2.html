@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>table</title>
+ </head>
+ <body background = "step1/site_left_banner.jpg">
+	  <colgroup> <!--크기조절-->
+		<col width = "300"/>
+		<col width = "200"/>
+		<col width = "*"/> <!--나머지 공간을 이것이 차지하게 함, 중간이나 처음에 가도 상관없음-->
+ 	  </colgroup>
+      <table width = "700" border = "1" cellpadding = "5" cellspacing = "5">
+	          <tr> <td rowspan = "3" background = "step1/site_bbs_icon.jpg">셀1</td> <td>셀2</td> <td>셀3</td> </tr> <!--colspan:가로병합, rowspan:세로병합-->
+			  <tr> <td>셀4</td> <td>셀5</td> </tr> <!--background:배경이미지-->
+			  <tr> <td>셀6</td> <td>셀7</td> </tr>
+	  </table>
+  
+ </body>
+</html>

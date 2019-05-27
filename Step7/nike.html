@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>Nike mobile shop</title>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+	#wrap{width:100%;height:100%;display:inline-block;position:relative}
+	/*header*/
+		header{width:100%;display:inline-block;padding:10px 2%} /*모바일을 퍼센트로 주는 것이 좋음*/
+		header h1{float:left}
+		header ul{float:right;width:50%;text-align:right} /*크기가 없을 때 margin넣으면 밀림현상 발생*/
+		header ul li{display:inline-block;margin:0 2%}
+	/*content*/
+		.content{width:100%;display:inline-block}
+		/*common*/
+		section{width:100%;display:inline-block}
+		.banner img{width:100%}
+		.com_text a{display:none} /*없다 나오고 있다 사라짐*/
+		.com_text{margin:20px 0}
+		.com_text h3{font-size:1.3em} /*사이트 내에서 기준이 되는 값의 배수가 되게 하는 것, 가변폰트크기(em)*/
+		.com_text span{font-size:1em}
+	/*미디어쿼리 이전은 PC, 미디어쿼리 이후는 모바일이나 태블릿 => 반응형 웹디자인*/
+	/*미디어쿼리: 반응형사이트, all/print/screen*/
+		/*인쇄화면;프린트 안되게 막는 것*/
+		@media print and (min-width:0) and (max-width:100%) /*대상 모든 종이; 프린트 안되게 막는 것*/
+		{
+			*{display:none}
+			html,body{display:none}	
+		}
+		/*브라운관,TV 등의 매체*/
+		@media screen and (min-width:0) and (max-width:100%) /*TV기준으로 하는 경우*/
+		{
+		}
+		/*아이폰5*/
+		@media all and (max-width:320px)
+		{
+			header{position:fixed;bottom:0;left:0;background:white}
+			.com_text h3{font-size:1.2em;background:orange}
+			.com_text a{display:block}
+		}
+		/*갤럭시4,5*/
+		@media all and (min-width:321px) and (max-width:360px)
+		{
+			header{position:fixed;bottom:0;left:0;background:white}
+			.com_text h3{font-size:1.2em;background:red}
+			.com_text a{display:block}
+		}
+		/*아이폰6+*/
+		@media all and (min-width:361px) and (max-width:414px)
+		{
+			header{position:fixed;bottom:0;left:0;background:white}
+			.com_text h3{font-size:1.2em;background:yellow}
+			.com_text a{display:block}
+		}
+		/*아이폰5 가로*/
+		@media all and (min-width:415px) and (max-width:568px)
+		{
+			header{position:fixed;bottom:0;left:0;background:white}
+			.com_text h3{font-size:1.2em;background:green}
+			.com_text a{display:block}
+		}
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+		<!--header-->
+			<header>
+				<h1><a href="#"><img src="images/nike_logo.gif"></a></h1>
+				<ul>
+					<li><img src="images/nike_prd_search.gif"/></li>
+					<li><img src="images/nike_menu_btn.gif"/></li>
+				</ul>
+			</header>
+		<!--//header-->
+		
+		<!--content-->
+			<div class="content">
+				<section class="banner"><img src="images/nike_prd_01.png"/></section>
+				<section class="com_text">
+					<h3>에어 조던 11 레트로 로우 IE‘OBSIDIAN’</h3>
+					<a href="#">링크</a> <!--없다 나오고 있다 사라짐-->
+					<span>여름 시즌에 최상의 편안함과 스타일.<br/>멋스러운 유선형 디자인의 옵시디언 컬러로 만나다.</span>
+				</section>
+
+				<section class="com_text">
+					<h3>나이키 에어맥스 TINY 90</h3>
+					<span>에어맥스 패밀리의 새로운 멤버를 만나보세요.</span>
+				</section>
+
+				<section class="com_text">
+					<h3>나이키 크롬 블러쉬 컬렉션</h3>
+					<span>강인함이 완성하는 스타일.<br/>파스텔 톤과 차분한 그레이 컬러의<br/>조화로운 컬렉션으로 당신의 다음 운동,<br/>그리고 스포티한 주말을 완성하세요.</span>
+				</section>
+			</div>
+		<!--//content-->
+	</div>
+ </body>
+</html>

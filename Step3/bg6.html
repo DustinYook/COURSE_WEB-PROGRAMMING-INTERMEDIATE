@@ -1,0 +1,32 @@
+
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type = "text/css">
+	body, ul, li /* 3개 모두 */ 
+	{
+		margin:0;
+		padding: 0;
+	}
+	ul{list-style: none}
+	li
+	{
+		background: url(images/list_icon.jpg) no-repeat left 10px;
+		/* text-indent: 20px; */
+		padding-left: 20px
+		line-height: 30px;
+		/* margin-left: 20px; */
+	} /* 배경은 padding의 영향받지 않음, margin은 영향받음 */
+  </style>
+ </head>
+ <body>
+	<ul>
+		<li>내용</li>
+		<li>내용<br/>내용내용내용내용</li> <!--br의 경우에는 text-indent효과 소멸-->
+		<li>내용</li>
+		<li>내용</li>
+		<li>내용</li>
+	</ul>
+ </body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Starbucks Coffee Korea</title>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			body{font-family:"맑은 고딕"}
+				#wrap{width:100%;height:100%;position:relative;display:block}
+				/*header*/
+					header{width:100%;height:122px;background-color:#f6f5ef;border-top:2px solid black;position:fixed;left:0;top:0;z-index:9}
+					header .h_con{width:1100px;height:120px;display:inline-block;position:relative} /*120인 이유:border뺀 값*/
+					header .h_con h1{float:left;margin-top:20px}
+					header .h_con .event_btn{position:absolute;right:0;top:-1px}
+					header ul.top_menu{float:right;margin-right:60px;margin-top:10px}
+					header ul.top_menu li{display:inline-block;margin:0 5px}
+					header ul.top_menu li a{color:#555;font:12px}
+					header ul.top_menu li button{width:34px;height:34px;background:url(starbucks/find_store_btn.gif);overflow:hidden;border:none;text-indent:-999px}
+					header nav{width:100%;text-align:right;position:absolute;right:0;bottom:0} /*GNB*/
+					header nav a{display:inline-block;font-size:13px;color:#555;padding:10px 20px 20px 20px;border-radius:5px 5px 0 0}
+					header nav a:hover{color:#669900 ;background:#2c2a29}		
+				/*content*/
+					.content{width:100%;display:inline-block;margin-top:122px;position:relative}
+					/*common*/
+					section{width:100%;display:inline-block}
+					article{width:1100px;display:inline-block;position:relative}
+					.btn_st1{color:white;background:#2c2a29;border:2px solid #2c2a29;height:36px;line-height:32px;font-size:14px;border-radius:5px} 
+					.btn_st1:hover{color:#2c2a29;background:none}
+					/*border있을 경우 border뺀 크기가 중앙*/
+					.btn_st2{color:#2c2a29;border:2px solid #2c2a29;height:36px;line-height:32px;font-size:14px;border-radius:5px}
+					.btn_st2:hover{color:white;background:#2c2a29}
+					.btn_st3{border:2px solid #d9aa8a;height:34px;line-height:30px;font-size:14px;border-radius:5px}
+					.btn_st3:hover{color:black;background:white}
+					.btn_st4{border:2px solid white;height:34px;line-height:30px;font-size:14px;border-radius:5px}
+					.btn_st4:hover{color:#272727;background:white}
+					.btn_st5{border:2px solid #272727;height:34px;line-height:30px;font-size:14px;border-radius:5px}
+					.btn_st5:hover{color:white;background:#272727}
+
+					/*layout*/
+						/*공지 프로모션*/
+						.main_banner{background:#f5e9d9}
+						.latest div.notice{width:50%;height:62px;float:left;background:#111}
+						.latest div.notice .n_data{width:550px;float:right;position:relative}
+						.latest div.notice .n_data h3{color:white;line-height:62px;float:left}
+						.latest div.notice .n_data ul{width:390px;float:left;margin-left:10px}
+						.latest div.notice .n_data ul li{width:100%;color:#fff;font-size:14px;white-space:nowrap;overflow:hidden;
+						text-overflow:ellipsis;line-height:62px}
+						.latest div.notice .n_data a.add_btn{position:absolute;right:2%;top:50%;margin-top:-20px}
+						.latest div.promotion{width:50%;height:62px;float:right;background:#f6f5ef}
+						.latest div.promotion .p_data{width:550px;float:left}
+						.latest div.promotion .p_data a{font-size:18px;font-weight:bold;color:#111;line-height:62px;background:url(starbucks/btn_icon2.png) no-repeat right center;padding-right:40px;display:inline-block}
+					/*rewards*/
+						.rewards{height:241px;margin-top:-4px;position:relative} /*inline-block으로 인해 뜨는 현상 제거*/
+						.rewards article{position:absolute;top:0;left:50%;margin-left:-550px}
+						.rewards article .btn_area{width:260px;position:absolute;right:0;top:70px}				
+						.rewards article .btn_area a.w50{width:48%}				
+						.rewards article .btn_area a.fo_l{float:left}				
+						.rewards article .btn_area a.fo_r{float:right}				
+						.rewards article .btn_area a.w100{width:100%;float:left;margin-top:60px}				
+						.rewards .l_bg{width:50%;height:241px;float:left;background:#272727}
+						.rewards .r_bg{width:50%;height:241px;float:right;background:#d6c798}
+					/*promotion1*/
+						.promotion1{height:571px;background:url(starbucks/bg1.jpg);background-size:cover;margin-top:-4px}
+						.promotion1 a{position:absolute;left:589px;top:360px;padding:0 20px}
+					/*promotion2*/
+						.promotion2{height:400px;background:url(starbucks/bg2.jpg);background-size:cover;margin-top:-4px}
+						.promotion2 a{position:absolute;left:180px;top:230px;padding:0 20px;color:#d9aa8a}
+						.promotion2 a:hover{position:absolute;left:180px;top:230px;padding:0 20px;color:#fff;background:#d9aa8a}
+					/*menu*/
+						.menu{height:800px;background:url(starbucks/bg3.jpg) no-repeat center center fixed;background-size:cover;margin-top:-4px}
+						.menu a{position:absolute;left:240px;top:530px;padding:0 20px;color:white}
+					/*shop*/
+						.shop{height:590px;background:url(starbucks/bg4.jpg) no-repeat center center fixed;background-size:cover;margin-top:-4px;position:relative}
+						.shop div.s_data{width:334px;height:334px;background:url(starbucks/shop.png) no-repeat center center;color:white;
+						left:400px;top:128px;border-radius:100%;position:absolute}
+						.shop div.s_data a{position:absolute;left:110px;top:200px;padding:0 20px;color:#272727}
+					/*shop_find*/
+						.shop_find{height:400px;background:url(starbucks/shop_find.png) no-repeat center center ;background-size:cover;margin-top:-4px;position:relative} 
+						.shop_find a{position:absolute;left:490px;top:300px;padding:0 20px;color:#272727}
+				/*footer*/
+					footer{height:200px;background:#2C2A29;position:relative}
+					footer ul{margin-top:10px;margin-left:60px;position:absolute}
+					footer ul li{display:inline-block;margin:15px}
+					footer ul li a{color:white;font-size:15px}
+					footer .f_menu1{margin-top:10px;margin-left:60px;position:absolute}
+					footer .f_menu2{margin-top:60px;margin-left:425px;position:absolute}
+					.btn{color:white;background:black;border:2px solid white;height:50px;line-height:30px;font-size:14px;border-radius:5px;padding:7px}
+					footer .f_menu2 .btn:hoover{color:black;background:white}
+					footer .text{color:white;position:absolute;top:65%;left:33%}
+					
+			</style>
+ </head>
+ <body>
+	<div id="wrap"> <!--body가 아닌 큰 요소로 잡아줌-->
+		<!--Header-->
+			<header>
+			<div class="h_con">
+				<h1><a href="/" title="메인 페이지로 이동"><img src="starbucks/logo.png" alt="스타벅스 로고"/></a></h1> <!--로고-->
+				<a href="#" class="event_btn"><img src="starbucks/event_btn.gif"/></a> <!--이벤트 버튼-->
+				<ul class="top_menu">
+					<li><a href="#">Sign In</a></li>
+					<li><a href="#">My Starbucks</a></li>
+					<li><a href="#">Customer Service & Ideas</a></li>
+					<li><a href="#">Find a Store</a></li>
+					<li><button>검색</button></li>
+				</ul>
+			<!--GNB-->
+			<nav>
+				<a href="#">COFFEE</a>
+				<a href="#">MENU</a>
+				<a href="#">STORE</a>
+				<a href="#">RESPONSIBILITY</a>
+				<a href="#">MY STARBUCKS REWARDS</a>
+				<a href="#">WHAT'S NEW</a>
+			</nav>
+			<!--//GNB-->
+			</div>
+			</header>
+		<!--//Header-->
+		<!--Content-->
+			<div class="content">
+			<!--banner-->
+			<section class="main_banner">
+				<article>
+					<a href="#" target="_blank" title="새창으로 이동"><img src="starbucks/main_banner.jpg" alt="show your flavor 자세히보기"/></a>
+				</article>
+			</section>
+			<!--//banner-->
+			<!--notice & promotion-->
+			<section class="latest">
+				<!--notice-->
+				<div class="notice">
+					<div class="n_data">
+						<h3>공지사항</h3>
+						<ul>
+							<li>스타벅스에서 여름맞이 할인 행사를 진행합니다. 모든 커피를 1000원이라는 파격적인 가격으로 할인 판매하고 있으니 많은 이용 부탁드립니다.</li>
+						</ul>
+						<a href="#" class="add_btn"><img src="starbucks/btn_icon1.png" alt="공지사항 더보기"/></a>
+					</div>
+				</div>
+				<!--//notice-->
+				<div class="promotion">
+					<div class="p_data"><a href="#">스타벅스 프로모션</a></div>
+				</div>
+			</section>
+			<!--notice & promotion-->
+			<!--rewards-->
+			<section class="rewards">
+				<article>
+					<div class="btn_area">
+						<a href="#" class="btn_st1 w50 fo_l">회원가입</a> <!--클래스 하나 더 추가-->
+						<a href="#" class="btn_st2 w50 fo_r">로그인</a>
+						<a href="#" class="btn_st2 w100">e-Gift 선물하기</a>
+					</div>
+					<img src="starbucks/rewards.jpg" alt="스타벅스만의 특별한 혜택"/>
+				</article>
+				<div class="l_bg"></div>
+				<div class="r_bg"></div>
+			</section>
+			<!--//rewards-->
+			<!--promotion1-->
+			<section class="promotion1">
+				<article>
+					<a href="#" class="btn_st2">자세히 보기</a>
+					<img src="starbucks/product.png"/>
+				</article>
+			</section>
+			<!--//promotion1-->
+			<!--promotion2-->
+			<section class="promotion2">
+				<article>
+					<a href="#" class="btn_st3">자세히 보기</a>
+					<img src="starbucks/product2.png"/>
+				</article>
+			</section>
+			<!--//promotion2-->
+			<!--menu-->
+			<section class="menu">
+				<article>
+					<a href="#" class="btn_st4">자세히 보기</a>
+					<img src="starbucks/menu.png"/>
+				</article>
+			</section>
+			<!--//menu-->
+		
+			<!--shop-->
+			<section class="shop">
+				<article>
+					<div class="s_data">
+						<a href="#" class="btn_st5">자세히 보기</a>
+					</div>
+				</article>
+			</section>
+			<!--//shop-->
+			<!--shop_find-->
+			<section class="shop_find">
+				<article>
+					<a href="#" class="btn_st5">매장찾기</a>
+				</article>
+			</section>
+			<!--//shop find-->
+			</div>
+		<!--//Content-->
+		<!--Footer-->
+			<footer>
+				<ul class="f_menu1">
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">영상정보처리기기</a></li>
+					<li><a href="#">운영관리 방침</a></li>
+					<li><a href="#">홈페이지 이용약관</a></li>
+					<li><a href="#">위치정보 이용약관</a></li>
+					<li><a href="#">스타벅스 카드 이용약관</a></li>
+					<li><a href="#">윤리경영 핫라인</a></li>
+				</ul>
+				<ul class="f_menu2">
+					<li><a href="#" class="btn">찾아오시는 길</a></li>
+					<li><a href="#" class="btn">신규입점제의</a></li>
+					<li><a href="#" class="btn">사이트 맵</a></li>
+				</ul>
+				<div class="text">ⓒ 2015 Starbucks Coffee Company. All Rights Reserved.</div>
+			</footer>
+		<!--//Footer-->
+	</div>
+ </body>
+</html>

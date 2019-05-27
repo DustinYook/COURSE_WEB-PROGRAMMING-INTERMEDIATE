@@ -1,0 +1,8 @@
+html5 태그 시멘틱 
+<div class="header"> -> <header>
+<div class="content"> -> <section> 
+<article>:section안의 요소 -> 이 안에서 <div>로 구성
+<div class="Qucik"> -> <aside> // 컨텐츠 영역을 벗어나서 구성되는 요소
+<div class="footer"> -> <footer> <adress> 
+<div class="menu"> -> <nav> ; navigation
+<container>: 하나만 쓸 수 있음

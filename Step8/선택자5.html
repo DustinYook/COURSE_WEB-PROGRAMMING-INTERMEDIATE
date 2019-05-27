@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<link href="../reset.css" rel="stylesheet"/>
+    <style type="text/css">
+		body{font-family:"맑은 고딕";font-weight:bold;font-size:20px}
+        table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed}
+		th,td{padding:10px}
+		table th{border-bottom:2px solid brown}
+		table th:nth-child(1){border-top:2px solid red}
+		table th:nth-child(2){border-top:2px solid green}
+		table th:nth-child(3){border-top:2px solid blue}
+		table tr:first-child{background-color:black;color:white}
+		table tr:last-child{background-color:gray;color:white}
+		table tr td a{color:green}
+		table tr:last-child td a:last-child{color:yellow}
+		table tr:nth-child(2),tr:nth-child(3),tr:nth-child(4),tr:nth-child(5){border-bottom:1px solid gray}
+		table th:first-child, td:nth-child(2),td:nth-child(3),td:nth-child(4),td:nth-child(5){border:1px solid gray;border-left:1px solid gray}
+		table th:nth-child(2), td:nth-child(2),td:nth-child(3),td:nth-child(4),td:nth-child(5){border-right:1px solid gray}
+		/*통합하여 묶어두고 다른 것들은 선택자 이용해서 서식바꿔주는 것이 더 효율적*/
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="width:23.6%" />
+            <col style="width:23.6%" />
+            <col style="width:52.2%" />
+        </colgroup>
+        <tr>
+            <th scope="col">유형</th>
+            <th scope="col">횟수</th>
+            <th scope="col">적립 마일리지</th>
+        </tr>
+        <tr>
+            <td>신차</td>
+            <td>1</td>
+            <td><a href="#">10,000 P</a></td>
+        </tr>
+        <tr>
+            <td>중고차</td>
+            <td>1</td>
+            <td><a href="#">10,000 P</a></td>
+        </tr>
+        <tr>
+            <td>렌트</td>
+            <td>1</td>
+            <td><a href="#">10,000 P</a></td>
+        </tr>
+        <tr>
+            <td>정비</td>
+            <td>1</td>
+            <td><a href="#">10,000 P</a></td>
+        </tr>
+        <tr>
+            <td>기타</td>
+            <td>1</td>
+            <td><a href="#">10,000 P</a></td>
+        </tr>
+        <tr>
+            <td>합계</td>
+            <td>6</td>
+            <td><a href="#">60,000 P</a></td>
+        </tr>
+    </table>
+</body>
+</html>

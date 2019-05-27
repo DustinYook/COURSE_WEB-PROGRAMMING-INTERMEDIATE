@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>movie</title>
+ </head>
+ <body>
+	<video controls> 
+	<!--controls:컨트롤러, autoplay:자동재생, poster:첫화면이미지, muted:무음처리, loop:반복-->
+		<source src="movie.mp4" type="video/mp4"/> <!--확장자를 써주어야 함-->
+		<track src="subtitle.vtt" kind="subtitles" srclang="ko" label="korean"/> <!--자막넣는 방법, srclang은 cc에서 언어설정할 때 사용-->
+		<!--자막 .vtt확장자, UTF-8-->
+	</video>
+ </body>
+</html>

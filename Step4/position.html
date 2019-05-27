@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style type = "text/css">
+        div{width:300px;height:300px}
+		.b{background:blue; position:fixed;l right:1%; top:30%}  absolute: 화면앞으로 붕 띄움 -> 팝업창 만드는 방법
+		.scroll{height:3000px}
+		.c{width:500px; height:500px; background:yellow; float:right; position:relative; top:500px}부모임을 알려줌: relative
+		.a{background:red; position:absolute; left:50px; top:50px; z-index:1}
+		/* 더 앞쪽으로 오게 하려면 z-index:1 z값 높을수도 더 앞에 있는 층, 화면 전체에서 50, 50 */
+		.cc{width:500px; height:500px; background:yellow; /* float:right; */ position:absolute; left:50%; top:50%; margin-left:-250px; margin-top:-250px} 
+	</style>
+ </head>
+ <body>
+    <!-- <div class = "b"> </div>
+	<div class = "scroll"> </div> -->
+	<div class = "cc"><!-- <div class = "a"> --></div> 
+	</div>
+ </body>
+</html>

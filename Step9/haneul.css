@@ -1,0 +1,88 @@
+		body{font-family: "Nanum Gothic",sans-serif;font-size:1em;background:#white}  /*공백제거: margin-top:-4px*/
+		#wrap{width:100%;max-width:640px;height:100%;position:relative;display:block;margin:0 auto} /*position:relative - 팝업, 100%는 block*/
+		header{width:100%;background:rgba(0,0,0,0.2);position:fixed;top:0;left:0;padding:5px 0;z-index:99}
+		header h1{display:inline-block}
+		header > a{position:absolute;left:2%;top:50%;margin-top:-6px} /*헤더의 중앙으로 배치*/
+		/*common*/
+		.container, section, article{width:100%;display:inline-block;position:relative} /*여기에 float 많이 들어가므로 inline-block*/
+		h2.head_tit{width:100%;display:block;color:#ab9958;font-size:2.4em;margin-bottom:7px}
+		span.sub_tit{width:100%;display:block;color:#666}
+		span.sub_tit::before{content:'';width:60px;height:1px;background:gray;display:inline-block;vertical-align:middle;margin-right:5px} /*앞에 줄*/
+		span.sub_tit::after{content:'';width:60px;height:1px;background:gray;display:inline-block;vertical-align:middle;margin-left:5px} /*뒤에 줄*/
+		/*navigation*/
+		.container nav{width:100%;display:inline-block}
+		.container nav a{width:50%;float:left;position:relative;text-align:left;font-weight:600;margin-top:-4px}
+		.container nav a img{width:100%}
+		.container nav span{width:100%;position:absolute;color:black;background:rgba(255,255,255,0.6);left:0;bottom:0;padding:8px 3%}
+		.main_img img{width:100%}
+		/*introduction*/
+		.intro{padding:80px 2%}
+		.intro .img_data{margin-top:50px}
+		.intro .img_data img{width:100%;margin-bottom:50px}
+		.intro .txt{width:100%;display:block;text-align:left;padding:0 5%}
+		.intro .txt h3{width:100%;display:block;font-size:1.4em;color:#666;border-left:3px solid #666;padding-left:3%}
+		.intro dl, .intro dt, .intro dd{width:100%;text-align:left;padding-left:3%;display:block}
+		.intro dt{font-size:1.2em;font-weight:700;color:#4b4e53;margin-top:25px;margin-bottom:5px}
+		.intro dd{color:#4b4e53}
+		/*gallery*/
+		.gal{padding-bottom:80px}
+		.gal ul{width:100%;display:inline-block;margin-top:20px}
+		.gal ul li{width:50%;float:left;margin-top:-4px} /*margin-top대신 line-height:0으로 써도 됨 (단, 글씨 없는 경우)*/
+		.gal ul li img{width:100%}
+		/*map*/
+		.map{background:url(images/haneul/map_bg.jpg) no-repeat center center fixed;background-size:cover;padding:50px 0}
+		.map span.sub_tit{color:white}
+		.map h3{color:white;width:100%;display:block;text-align:left;font-size:1.6em;position:relative;padding-left:90px;margin-top:30px}
+		.map h3::before{content:'';width:60px;height:1px;background:#ab9958;position:absolute;left:0;bottom:0}
+		.map h3::after{content:'';width:30px;height:30px;background:#ab9958;position:absolute;left:30px;bottom:0}
+		.map ul{width:100%;display:block;margin-top:30px;padding-left:90px;margin-bottom:30px}
+		.map ul li{width:100%;display:block;color:white;line-height:2em;text-align:left}
+		.map ul li a{color:white}
+		.map img{width:90%;max-width:600px} /*이렇게 넣어야 이미지가 깨지지 않음*/
+		/*about us*/
+		.about_us{background:#232323;padding:50px 5%}
+		.about_us h4{width:100%;display:block;text-align:left;border-bottom:1px solid gray;padding-bottom:10px;color:#ab9958}
+		.about_us h4 span{border-bottom:1px solid #ab9958;padding-bottom:10px}
+		.about_us div{width:100%;color:#888;text-align:justify;margin-top:10px}
+		/*footer*/
+		footer{width:100%;display:block;background:#1a1a1a;color:white;line-height:30px;font-size:0.8em}
+		/*media query*/
+		@media all and (min-width:640px) /*640px이상인 경우*/
+		{
+			header{width:640px;left:50%;margin-left:-320px}
+		}
+		@media all and (min-width:414px) and (max-width:639px) /*아이폰6*/
+		{
+			header h1{width:15%}
+			header h1 img{width:100%}
+			header > a{margin-top:-10px}
+			nav a span{font-size:0.8em}
+			h2.head_tit{font-size:1.8em}
+			span.sub_tit{font-size:0.8em}
+			.intro dt{font-size:1em}
+			.intro dd{font-size:0.7em}
+			.map h3{font-size:1.2em;padding-left:90px}
+			.map h3::before{content:'';width:40px;height:1px;background:#ab9958;position:absolute;left:0;bottom:0}
+			.map h3::after{content:'';width:20px;height:20px;background:#ab9958;position:absolute;left:20px;bottom:0}
+			.map ul{width:100%;display:block;margin-top:30px;padding-left:60px;margin-bottom:30px}
+			.map ul li{font-size:0.8em}
+			footer{font-size:0.6em}
+		}
+		@media all and (min-width:360px) and (max-width:413px) /*갤럭시 S5*/
+		{
+			header h1{width:15%}
+			header h1 img{width:100%}
+			header > a{margin-top:-10px}
+			nav a span{font-size:0.8em}
+			h2.head_tit{font-size:1.8em}
+			span.sub_tit{font-size:0.8em}
+			.intro dt{font-size:1em}
+			.intro dd{font-size:0.7em}
+			.map h3{font-size:1.2em;padding-left:90px}
+			.map h3::before{content:'';width:40px;height:1px;background:#ab9958;position:absolute;left:0;bottom:0}
+			.map h3::after{content:'';width:20px;height:20px;background:#ab9958;position:absolute;left:20px;bottom:0}
+			.map ul{width:100%;display:block;margin-top:30px;padding-left:60px;margin-bottom:30px}
+			.map ul li{font-size:0.8em}
+			.about_us div{font-size:0.8em}
+			footer{font-size:0.6em}
+		}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+	div{width:300px;height:300px}
+	div:first-child{background-color:red} /*태그의 번째수로 구분 => div가 아니라 할지라도 번째수에 포함*/
+	div:nth-child(2){background-color:orange} /*클래스와 선택자는 부분적으로 상호교환가능*/
+	div:nth-child(4){background-color:yellow}
+	div:last-child{background-color:green}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+	<div></div>
+	<div></div>
+	<span>aaaaa<span>
+	<div></div>
+	<div></div>	
+	 </body>
+</html>

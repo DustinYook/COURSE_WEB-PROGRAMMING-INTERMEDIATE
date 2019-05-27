@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Windows</title>
+	<link href="../reset.css" rel="stylesheet"/>
+    <style type="text/css">
+		body{font-family:"Nanum Gothic",sans-serif;background-color:gray}
+		div.menu{width:100%;height:50px;display:inline-block;position:fixed;background:linear-gradient(#ebebeb,#757575);bottom:0}
+		.win_btn{width:50px;height:50px;position:absolute;left:45%}
+		span{width:50px;height:50px;background:#001b30 url(images/win_icon_off.png) no-repeat center center;border-radius:100%;float:left}
+		span:hover{background:#193244 url(images/win_icon_on.png) no-repeat center center}
+		ul > li > a{color:white;line-height:40px}
+		.win_btn ul{width:200px;height:auto;background:#001b30;padding:10px 10px;position:absolute;bottom:-200px;left:-70px}
+		.win_btn:hover ul{bottom:50px} 
+		.win_btn:hover ul
+		{
+		    animation-name:menu_open;
+		    animation-duration:1s;
+		}
+		@keyframes menu_open /*애니메이션 효과*/
+	    {	
+		    from{bottom:-200px;opacity:0} /*원래 높이에서 시작하니까 자연스럽게 이어짐*/
+		    to{bottom:50px;opacity:1}
+	    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+		<div class="win_btn"> <!--50,50-->
+			<span></span> <!--배경색, url 반복없음;center;center w50 h50-->
+			<ul>
+				<li><a href="#">내 문서</a></li>
+				<li><a href="#">내 컴퓨터</a></li>
+				<li><a href="#">제어판</a></li>
+				<li><a href="#">휴지통</a></li>
+			</ul>
+		</div>
+    </div>
+</body>
+</html>

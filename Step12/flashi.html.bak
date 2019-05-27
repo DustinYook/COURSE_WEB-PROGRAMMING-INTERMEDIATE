@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>flash</title>
+ </head>
+ <body>
+	<object> <!--플래시를 넣는 대표적인 태그-->
+		<param value="logo.swf name="movie"/> <!--셀프클로징, value는 경로(input과 마찬가지)-->
+	</object>
+ </body>
+</html>

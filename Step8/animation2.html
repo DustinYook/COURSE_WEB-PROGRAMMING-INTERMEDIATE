@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+		<meta charset="UTF-8">
+		<title>Button</title>
+		<style type="text/css">
+			button
+			{
+				width:100px;
+				height:30px;
+				border:2px solid black;
+				background:gray;
+				color:white;
+				font-weight:800;
+			}
+			button:hover /*마우스 올릴 때 효과*/
+			{
+				animation-name:effect; 
+				animation-duration:1s; 
+				animation-delay:0.5s;
+			}
+			@keyframes effect /*애니메이션 정의*/
+			{	
+				from{background:gray}
+				to{background:black}
+			}
+		</style>
+ </head>
+ <body>
+		<center><button>Button</button></center>
+ </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Starbucks</title>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			div{width:100%;position:relative}
+			/* .aa{height:200px;background:url(starbucks/bg3.jpg) no-repeat center center fixed;background-size:cover} background-size:꽉 차게 */
+			.aa{height:150px;background:url(starbucks/bg3.jpg) no-repeat center center fixed;position:fixed;left:0;top:0;z-index:999} /*배너효과*/
+			.aa > a{position:absolute;color:white;border:2px solid white;padding:5px 20px;left:200px;bottom:27%;border-radius:5px}
+			.bb{height:1000px;background:url(starbucks/bg4.jpg) no-repeat center center fixed;background-size:cover;display:inline-block} /*fixed: 배경이미지 고정*/
+			/* .bb > a{position:absolute;width:150px;height:150px;background:black;color:white;left:20%;top:20%; 한줄짜리의 경우
+			border-radius:100%;line-height:150px} line-height:높이 만큼 설정하면 가운데로 배치됨 */
+			.bb > a{position:absolute;width:150px;height:150px;background:black;color:white;left:20%;top:20%;border-radius:100%} /*여러줄의 경우*/
+			.bb > a span{position:absolute;top:50%;margin-top:-15px;width:100%;left:0} /*border-radius:100%는 원형 버튼 만들 수 있음*/
+		</style>
+ </head>
+ <body>
+	<div class="aa">
+		<a href="#">자세히 보기</a>
+		<!-- <img src="starbucks/menu.png"/> -->
+	</div>
+	<div class="bb">
+		<a href="#"><span>둘러보기<br/>자세히보기</span></a> <!--span을 통해 여러줄 입력가능-->
+		<img src="starbucks/shop.png"/>
+	</div>
+	
+  
+ </body>
+</html>

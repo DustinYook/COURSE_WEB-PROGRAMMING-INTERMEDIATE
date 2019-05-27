@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style  text = "text/css">
+	a:link
+	{
+		color: green;
+		font-weight: 700;
+		font-size: 100px;
+		text-decoration: none;  /*밑줄 없애는 방법*/
+		/* text-decoration: underline; 밑줄 넣는 방법 */
+		/* 링크: 마우스 크로스오버, 눌렀을 때, 갔다가 왔을 때 상황 */
+	}
+
+	a:hover /*마우스를 올렸을 때 => 어디에도 들어가도 됨*/
+	{
+		color: blue; 
+		font-weight: 800;
+		text-decoration:underline
+	};  
+
+	a:active /*마우스 누르고 있을 때*/
+	{ color: red }
+	a:visited /*갔다 왔을 때*/
+	{ color: purple}
+
+  </style>
+ </head>
+ <body>
+	<a href = "http://www.naver.com"> 네이버 바로가기</a> 
+ </body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link href="../reset.css" rel="stylesheet" type="text/css"/>
+  <title>예진한복</title>
+	<style type="text/css">
+		body{font-family: "Noto Sans KR",sans-serif;font-size:1em;background:#white}
+		#wrap{width:100%;max-width:540px;height:100%;position:relative;display:block;margin:0 auto} 
+		/*header*/
+			/*header_menu*/
+			header{width:100%;position:absolute;top:0;left:0}
+			header .header_menu{width:100%;height:30px;background:#f5f5f5;border-bottom:1px solid #eee;border-top:1px solid #999}
+			header .header_menu a{color:#999;display:inline-block;float:right;margin-right:10px;margin-top:1%;font-size:0.8em;font-weight:bold}
+			/*title*/
+			header .title{width:100%;height:120px;position:relative;background:white;padding:10px;display:inline-block}
+			header .title h1{width:300px;position:absolute}
+			header .title a{width:41px;position:absolute}
+			
+
+		/*photo*/
+		.container .photo .photo1 img{width:100%}
+		/*introduction*/
+		.container .intro .area1{background:#eee}
+		.container .intro .area2{background:white;padding:0 10px;font-weight:700;color:gray}
+		.container .intro ul{width:100%;position:relative}
+		.container .intro ul li.img{width:29.9%;float:left;position:absolute}
+		.container .intro ul li.txt{width:65%;float:right;position:absolute}
+		/*common*/
+		.area1{background:#eee}
+		.area2{background:white}
+
+
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<!--HEADER-->
+			<header>
+				<!--HEADER MENU-->
+				<div class="header_menu">
+					<a href="#">회원가입</a>
+					<a href="#">로그인</a>
+				</div>
+				<!--//HEADER MENU-->
+				<!--TITLE-->
+				<div class="title">
+					<h1><a href="#"><img src="images/logo.png"/></a></h1> <!--LOGO-->
+					<a href="#"><img src="images/menu_btn.gif"/></a> <!--BUTTON-->
+				</div>
+				<!--//TITLE-->
+			</header>
+		<!--//HEADER-->
+
+
+		<!--CONTENT-->
+		<div class="container"> <!--메인 컨텐츠 시작하면 container사용-->
+			<section class="main_img"><img src="images/main_img.jpg"/></section>
+			<!--PHOTO-->
+			<section class="photo">
+				<div class="area1"><span class="area2">한복사진</span></div>
+		        <div class="photo1"><img src="images/prd_photo.jpg"/></div>
+			</section>
+			<!--INTRODUCTION-->
+			<section class="intro">
+				<div class="area1"><span class="area2">소개</span></div>
+				<ul>
+					<li class="img"><img src="images/introduce_01.jpg"/></li>
+					<li class="txt"><h3>예진한복 위치안내 및 소개</h3><h4>안녕하세요~예식을 축하 드립니다.   예식 준비 하느라 바쁘시...</h4></li>
+					<li class="img"><img src="images/introduce_02.jpg"/></li>
+					<li class="txt"><h3>semi-wedding SALON</h3><h4>안녕하세요 예진한복입니다~  2015년 봄  수컴퍼니에서 기획한 ...</h4></li>
+				</ul>
+			</section>
+			<!--CUSTOMER-->
+			<section class="customer">
+				<div class="area1"><span class="area2">고객</span></div>
+				<img src="images/user_photo.jpg"/>
+			</section>
+			<!--//CUSTOMER-->
+
+
+		</div>
+		<!--//CONTENT-->
+		<!-- <footer>All Rights Reserved 2015 © www.yejinsilk.com</footer> -->
+	</div>
+ </body>
+</html>

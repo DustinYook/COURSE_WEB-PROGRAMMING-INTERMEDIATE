@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Box</title>
+		<style type="text/css"> /* CSS 효과*/
+			div
+			{
+				width:50px;
+				height:50px;
+				position:absolute;  /*이동을 위해 화면위에 띄움*/
+				background-color:red; 
+				animation-name:effect1;  /*애니메이션 이름*/
+				animation-duration:2s; 	/*애니메이션 재생시간*/
+				animation-iteration-count:infinite;  /*애니메이션 반복횟수*/
+				animation-delay:0.5s;  /*애니메이션 실행시점*/
+			}
+			@keyframes effect1  /*keyframes:영상의 포인트를 잡아주는 것;전환되는 간격*/
+			{
+				/* from{background:red} 처음	
+				to{background:blue} 마지막 */
+				0%{background:red;left:0px;top:0px}
+				25%{background:orange;left:50px;top:0px}
+				50%{background:yellow;left:50px;top:50px}
+				75%{background:green;left:0px;top:50px}
+				100%{background:blue;left:0px;top:0px}
+			}
+		</style>
+</head>
+ <body>
+		<div></div>
+</body>
+</html>

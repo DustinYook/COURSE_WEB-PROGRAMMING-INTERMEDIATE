@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="reset.css" type="text/css"/>
+  <style type = "text/css">
+	table{border:1px solid orange; width:100%;border-collapse:collapse} /* 테이블 쓸 때 반드시 들어가는 것: border-collapse:collapse(경계를 무너뜨림) */
+	th{width:30%;border:1px solid orange;text-align:left;padding:left 10px;background-color:black;color:white;font-weight:normal} /* font-weight : "normal" or "bold" => 볼드체가 풀림 */
+	td{width:70%;border:1px solid orange;text-align:padding: 0 10px}
+	th.aa{vertical-align:top}  /* 위로 붙이는 것, top middle bottom */
+	th.tit{background-color:#df6c00;text-align:center}
+  </style>
+ </head>
+ <body>
+	<table>
+		<tr> <!-- 같은 것을 구분하게 하려면 class -->
+			<th colspan = "2" class = "tit">테이블 표 만들기</th> <!-- 2칸으로 합함 -->
+		</tr> <!--줄을 하나 넣음-->
+
+		<tr> <!-- 클래스명은 띄어쓰기로 붙여쓸 수 있음 -->
+			 <th rowspan = "2" class = "cellh aa">셀 헤더1</th>
+			 <td>셀1</td>
+		</tr>
+
+		<tr>
+				<td>셀2</td>
+		</tr>
+
+		<tr>
+			<th class="cellh">셀 헤더2</th>
+			<td>셀3</td>
+		</tr>
+
+		<tr>
+			<th class="cellh">셀 헤더2</th>
+			<td>셀4</td>
+			<!-- 헤더가 앞쪽에 있는 것 -->
+		</tr>
+	</table>
+ </body>
+</html>

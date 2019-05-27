@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <!--<meta name="viewport" content="width=800px,user-scalable=no">-->
+  <!--pc버전인데 모바일에서 정상적으로 보기위해서는 width값 설정--><!--무슨목적으로 메타 작성하는지, device-width:디바이스의 가로크기-->
+  <!--user-scalable:확대조정가능여부-yes/no-->
+  <title>모바일 웹프로그래밍</title>
+  <style type="text/css">
+		div{width:800px;height:300px;background:#ff9900}
+		/*미디어쿼리*/
+		@media all and(max-width:320px) /*media-print:출력했을 때, media-screen:스크린으로 볼 때, 최대 크기가 0~320사이*/
+		{
+			div{background:black}
+
+		}
+  </style>
+ </head>
+ <body>
+
+	<div>blahblahblahblah</div>
+
+ </body>
+</html>
